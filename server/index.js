@@ -9,5 +9,6 @@ const serverController = require('./controllers/serverController');
 app.get("/api/compliment", serverController.getCompliment);
 app.get("/api/fortune", serverController.getFortune);
 app.get("/api/travel/:option", serverController.getTravelRecommendation);
+app.post("/api/travel/",serverController.addDestinationToBucketlist);
 
 app.listen(4000, () => console.log("Server running on 4000"));

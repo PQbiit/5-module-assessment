@@ -17,18 +17,35 @@
       </aside>
     </div>
     <div class="container">
-      <form id="travel-ideas-form">
-        <h2>If you'd like some inspiration for your travels:</h2>
-        <select name="travelIdeas" id="travel-ideas-list">
-          <option value="">--Select what you fancy--</option>
-          <option value="beach">Cool ocean breaze and white sand beaches</option>
-          <option value="nature">Being surrounded by nature and majestic views</option>
-          <option value="city">Cosmopolitan city</option>
-        </select>
-        <button id="submit-travel">Get your recommendation</button>
-      </form>
-      <img src="" alt="" id="place-photo">
-      <h4 id="place-name"></h4>
+      <aside id="travel-inspitation-container">
+        <form id="travel-inspitation-form">
+          <h2>If you'd like some inspiration for your travels:</h2>
+          <select name="travelinspitation" id="travel-inspitation-list">
+            <option value="">--Select what you fancy--</option>
+            <option value="beach">Cool ocean breaze and white sand beaches</option>
+            <option value="nature">Being surrounded by nature and majestic views</option>
+            <option value="city">Cosmopolitan city</option>
+          </select>
+          <button id="form-button">Get your recommendation</button>
+        </form>
+        <img src="" alt="" id="place-photo">
+        <h4 id="place-name"></h4>
+      </aside>
+      <aside id="travel-suggestion-container">
+        <form id="travel-suggestion-form">
+          <h2>Have a destination on your mind?:</h2>
+          <h4>Great! Please fill up this form so we can add it to your bucketlist.</h4>
+          <p>Destination Name</p>
+          <input type="text" name="name" id="destination-name" placeholder="Name">
+          <p>How would you describe this place?</p>
+          <input type="text" name="description" id="destination-description" maxlength="255" placeholder="Description">
+          <p>Attach an image</p>
+          <input type="text" name="name" id="destination-image" placeholder="Image URL">
+          <button id="form-button">Submit</button>
+        </form>
+      </aside>
+    </div>
+    <div id="bucketlist-container" class="container">
     </div>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
