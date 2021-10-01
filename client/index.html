@@ -4,8 +4,8 @@
     <title>Back End Assessment</title>
     <link rel="stylesheet" href="./styles.css">
   </head>
-  <body class="container">
-    <div>
+  <body>
+    <div class="container">
       <aside id="fortune-container">
         <h2>Your fortune for today:</h2>
         <p id="fortune"></p>
@@ -16,7 +16,20 @@
         <p id="compliment"></p>
       </aside>
     </div>
-    
+    <div class="container">
+      <form id="travel-ideas-form">
+        <h2>If you'd like some inspiration for your travels:</h2>
+        <select name="travelIdeas" id="travel-ideas-list">
+          <option value="">--Select what you fancy--</option>
+          <option value="beach">Cool ocean breaze and white sand beaches</option>
+          <option value="nature">Being surrounded by nature and majestic views</option>
+          <option value="city">Cosmopolitan city</option>
+        </select>
+        <button id="submit-travel">Get your recommendation</button>
+      </form>
+      <img src="" alt="" id="place-photo">
+      <h4 id="place-name"></h4>
+    </div>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./index.js"></script>
